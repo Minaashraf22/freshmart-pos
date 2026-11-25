@@ -20,6 +20,9 @@ npm run build
 ```
 Try barcodes `6221001` to `6221006`.
 
+## Demo video
+[docs/demo.mp4](docs/demo.mp4) (short screen recording of the main flows)
+
 ## Preview
 ![Sell screen](docs/desktop.jpg)
 ![Receipt](docs/receipt.jpg)
@@ -27,3 +30,6 @@ Try barcodes `6221001` to `6221006`.
 
 ## Tests
 24 checks in headless Chrome, including: unknown barcode, 33% discount rounding (103.00 gives 69.01 with 8.47 VAT), discount clamp to 100%, cash below total is blocked, change calculation, weight items, stock cap, hold and resume, reload persistence, refund restores stock, no horizontal overflow on mobile, no console errors.
+
+## About the tax line
+The 14% VAT is a fixed, illustrative rate for this demo. A real shop needs correct tax rules per product and a certified receipt system. This is not a production POS.
